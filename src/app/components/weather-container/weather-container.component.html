@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="notif" *ngIf="notif">
+        <weather-notification [notif]="notif"></weather-notification>
+    </div>
+    <div class="app">
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+    </div>
+</div>

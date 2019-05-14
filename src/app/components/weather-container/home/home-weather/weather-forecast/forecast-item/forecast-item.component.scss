@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 130px;
+  height: 180px;
+  background-color: #807f81;
+  overflow: hidden;
+  border-radius: 30px;
+
+  .date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .txt {
+      padding-top: 10px;
+    }
+    .img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  .temp {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .desc {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .icon {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .img {
+      width: 50px;
+    }
+  }
+}

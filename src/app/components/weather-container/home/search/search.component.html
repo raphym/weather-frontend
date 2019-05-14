@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="search">
+    <form #f="ngForm">
+      <input type="text" class="searchTerm" [(ngModel)]="city" name="city" pattern="^[a-zA-Z]+$">
+      <button (click)="search()" [disabled]="!f.valid" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+      <button (click)="geo()" class="geoButton">
+        <i class="fas fa-map-marker-alt"></i>
+      </button>
+    </form>
+    <div class="error" *ngIf="!f.valid">only english letters allowed</div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="date">
+    <div class="txt">
+      {{weather?.date | date: 'dd LLLL'}}
+    </div>
+    <img class="img" src="../../../../../../../assets/img/calendar.png">
+  </div>
+  <div class="temp">
+    {{weather?.temp}} <span [innerHtml]="symbol"></span>
+  </div>
+  <div class="desc">
+    {{weather?.description}}
+  </div>
+  <div class="icon">
+    <img class="img" src="{{'../../../../../../../assets/img/api/'+weather?.icon+'.png'}}">
+  </div>
+</div>

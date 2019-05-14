@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="fav-content" *ngIf="isShown">
+    <div class="favorites" *ngFor="let favCityWeather of favCitiesWeather">
+      <weather-card [cityDetails]="{ name: favCityWeather.cityName, id: favCityWeather.id}" [code]="favCityWeather.icon"
+        [temp]="favCityWeather.temp" [favList]="this.citiesDetails" (showCityEvent)="showCity($event)">
+      </weather-card>
+    </div>
+  </div>
+
+  <div *ngIf="isLoading" class="loader">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+</div>

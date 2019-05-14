@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="content">
+    <div class="txt">
+      <div [ngClass]="notif.type === 'primary' ? 'primary': 'error' ">
+        <div class="invisible"></div>
+        <div class="txt">
+          {{notif?.message}}
+        </div>
+        <div class="but">
+          <button class="but-c" (click)="close()">X</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

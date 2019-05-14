@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="search-content" *ngIf="!isLoading">
+    <weather-search (searchEvent)="cityChange($event)" (searchGeoEvent)="geoChange($event)"
+      (favoritesEvent)="favoritesChange($event)"></weather-search>
+  </div>
+
+  <div class="weather-content" *ngIf="isShown">
+    <home-weather [weather]="weather" [(favList)]="favList" [cityDetails]="currentCity" [forecast]="forecast">
+    </home-weather>
+  </div>
+
+  <div *ngIf="isLoading" class="loader">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
