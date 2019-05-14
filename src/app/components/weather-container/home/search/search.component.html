@@ -1,7 +1,7 @@
 <div class="container">
   <div class="search">
     <form #f="ngForm">
-      <input type="text" class="searchTerm" [(ngModel)]="city" name="city" pattern="^[a-zA-Z]+$">
+      <input type="text" class="searchTerm" [(ngModel)]="city" name="city" pattern="^[a-zA-Z ]+$">
       <button (click)="search()" [disabled]="!f.valid" class="searchButton">
         <i class="fa fa-search"></i>
       </button>

@@ -38,6 +38,10 @@ export class SearchComponent implements OnInit {
 
   // search the weather city from the city variable
   search() {
+    if (this.city === '') {
+      return;
+    }
+
     this.searchEvent.emit(this.city);
     this.city = '';
     this.form.reset();
