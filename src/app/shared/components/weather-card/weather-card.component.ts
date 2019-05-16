@@ -93,7 +93,6 @@ export class WeatherCardComponent implements OnInit, OnChanges {
       case '01n': {
         this.description = 'clear sky';
         this.background = 'card-night';
-
         this.picture = 'night';
         this.isShow = true;
         break;
@@ -197,14 +196,14 @@ export class WeatherCardComponent implements OnInit, OnChanges {
         break;
       }
       case '50d': {
-        this.description = 'snow';
-        this.background = 'card-snow';
-        this.picture = 'snow';
+        this.description = 'mist';
+        this.background = 'card-sunny';
+        this.picture = 'sunny';
         this.isShow = true;
         break;
       }
       case '50n': {
-        this.description = 'clear sky';
+        this.description = 'mist';
         this.background = 'card-night';
         this.picture = 'night';
         this.isShow = true;
